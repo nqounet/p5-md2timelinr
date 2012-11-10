@@ -1,0 +1,3 @@
+[submodule "public/timelinr"]
+	path = public/timelinr
+	url = git://github.com/juanbrujo/jQuery-Timelinr.git

@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html>
-  <head><title><%= title %></title></head>
-  <body><%= content %></body>
+<html lang="ja-JP">
+<head>
+  <meta charset="<%= app->renderer->encoding %>" />
+  %= stylesheet "/timelinr/css/style_v.css"
+  %= javascript "/js/jquery.js"
+  %= javascript "/timelinr/js/jquery.timelinr-0.9.5.js"
+  %= javascript "/js/app.js"
+</head>
+<body>
+%= content
+</body>
 </html>
