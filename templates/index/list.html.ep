@@ -1,0 +1,19 @@
+% layout 'default';
+% title 'Mojolicious Timelinr';
+<div id="md2timelinr">
+<div id="timeline">
+  <ul id="dates">
+    <li><a href="#list"><%= $subject %></a></li>
+  </ul>
+  <ul id="issues">
+      <li id="list">
+        <h1><%= $subject %></h1>
+        % for my $file (@$assets) {
+          <h3>
+            %= link_to $file->basename => url_for($file->basename);
+          </h3>
+        % }
+      </li>
+  </ul>
+</div>
+</div>

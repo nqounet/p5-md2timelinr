@@ -1,0 +1,19 @@
+% layout 'default';
+% title 'Mojolicious Timelinr';
+<div id="md2timelinr">
+<div id="timeline">
+  <ul id="dates">
+    % for my $slide (@{$stash_slide}) {
+      <li><a href="#<%= $slide->{id} %>"><%= substr $slide->{subject}, 0, 4 %>...</a></li>
+    % }
+  </ul>
+  <ul id="issues">
+    % for my $slide (@{$stash_slide}) {
+      <li id="<%= $slide->{id} %>"><%== $slide->{content} %></li>
+    % }
+  </ul>
+  <a href="#" id="next">+</a>
+  <a href="#" id="prev">-</a>
+</div>
+%= link_to 'トップ' => '/';
+</div>

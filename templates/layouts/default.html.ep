@@ -3,6 +3,7 @@
 <head>
   <meta charset="<%= app->renderer->encoding %>" />
   %= stylesheet "/timelinr/css/style_v.css"
+  %= stylesheet "/css/app.css"
   %= javascript "/js/jquery.js"
   %= javascript "/timelinr/js/jquery.timelinr-0.9.5.js"
   %= javascript "/js/app.js"

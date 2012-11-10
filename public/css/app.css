@@ -1,0 +1,40 @@
+#md2timelinr {
+font-size: 18pt;
+}
+#md2timelinr #issues li h1 {
+color: #ffcc00;
+font-size: 36pt;
+}
+#md2timelinr #issues li h2 {
+font-size: 30pt;
+}
+#md2timelinr #issues li h3 {
+font-size: 24pt;
+}
+#md2timelinr #issues li p {
+font-size: 18pt;
+line-height: 1.4;
+}
+#md2timelinr #timeline {
+width: 1000px;
+height: 600px;
+}
+#md2timelinr #dates {
+width: 200px;
+}
+#md2timelinr #dates li {
+width: 200px;
+}
+
+
+#md2timelinr #issues {
+width: 800px;
+}
+#md2timelinr #issues li {
+width: 800px;
+}
+
+#grad_top,
+#grad_bottom {
+width: 1000px;
+}
