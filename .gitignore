@@ -1,1 +1,17 @@
+.DS_Store
+/var/
+*.log
+*.bak
+*.old
+/inc/
+/blib/
+/Makefile
+/pm_to_blib
+/MYMETA.*
+/.carton/
+/local/
+cache/
+*.db
+_*/
+*.pid
 *.md
