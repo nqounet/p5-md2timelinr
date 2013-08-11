@@ -3,7 +3,7 @@ use utf8;
 use Mojo::Base 'Mojolicious::Controller';
 
 use Path::Class qw(file dir);
-use Text::Markdown qw( markdown );
+use Text::Markdown::Discount qw( markdown );
 use Mojo::DOM;
 use Encode;
 
