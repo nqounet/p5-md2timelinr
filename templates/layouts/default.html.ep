@@ -3,12 +3,16 @@
 <head>
   <meta charset="<%= app->renderer->encoding %>" />
   %= stylesheet "/timelinr/css/style_v.css"
-  %= stylesheet "/css/app.css"
-  %= javascript "/js/jquery.js"
-  %= javascript "/timelinr/js/jquery.timelinr-0.9.5.js"
-  %= javascript "/js/app.js"
+  %= stylesheet "/app/app.css"
 </head>
 <body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+% my $min = '';
+<script>
+window.jQuery || document.write('<script src="<%= url_for(q{/jquery/jquery-1.8.3.min.js}) %>"><\/script>');
+</script>
+  %= javascript "/timelinr/js/jquery.timelinr-0.9.53.js"
+  %= javascript "/app/app.js"
 %= content
 </body>
 </html>
